@@ -151,6 +151,85 @@
       ]
     }
   },
+  "materialsPage": {
+    "eyebrow": "Matériaux",
+    "title": "Les panneaux essentiels de l'agencement",
+    "intro": "Nous stockons en permanence les panneaux les plus utilisés par les professionnels, avec de nouvelles finitions ajoutées régulièrement.",
+    "labels": {
+      "thickness": "Épaisseurs",
+      "format": "Formats",
+      "uses": "Usages courants"
+    },
+    "items": [
+      {
+        "name": "Panneaux de particules",
+        "text": "Le panneau de base de l'agencement intérieur : stable, économique et facile à usiner.",
+        "thickness": "8 – 38 mm",
+        "format": "2800 × 2070 mm",
+        "uses": [
+          "Caissons",
+          "Étagères",
+          "Fonds de meubles"
+        ]
+      },
+      {
+        "name": "MDF",
+        "text": "Surface lisse et homogène, idéale pour la laque et l'usinage de formes. Disponible en version hydrofuge.",
+        "thickness": "3 – 30 mm",
+        "format": "2800 × 2070 / 2440 × 1220 mm",
+        "uses": [
+          "Façades laquées",
+          "Pièces usinées",
+          "Pièces humides (hydrofuge)"
+        ]
+      },
+      {
+        "name": "Contreplaqué",
+        "text": "Robuste et résistant, il convient aux structures et au mobilier soumis à de fortes contraintes.",
+        "thickness": "5 – 30 mm",
+        "format": "2500 × 1220 mm",
+        "uses": [
+          "Structures",
+          "Mobilier robuste",
+          "Habillages"
+        ]
+      },
+      {
+        "name": "OSB",
+        "text": "Panneau de lamelles orientées, solide et économique, apprécié aussi pour son aspect brut.",
+        "thickness": "9 – 22 mm",
+        "format": "2500 × 1250 mm",
+        "uses": [
+          "Cloisons",
+          "Planchers",
+          "Décors bruts"
+        ]
+      },
+      {
+        "name": "Panneaux mélaminés",
+        "text": "Panneaux de particules revêtus d'un décor mélaminé : unis, bois ou fantaisie, prêts à l'emploi.",
+        "thickness": "8 – 19 mm",
+        "format": "2800 × 2070 mm",
+        "uses": [
+          "Caissons",
+          "Mobilier commercial",
+          "Rangements"
+        ]
+      },
+      {
+        "name": "Chants",
+        "text": "Bandes de chant assorties aux décors des panneaux pour une finition propre et durable.",
+        "thickness": "0,4 – 2 mm",
+        "format": "Largeurs 19 – 45 mm",
+        "uses": [
+          "Finition des champs",
+          "Protection des arêtes",
+          "Assortiment des décors"
+        ]
+      }
+    ],
+    "note": "Dimensions et épaisseurs indicatives, sous réserve de disponibilité. D'autres références peuvent être commandées sur demande."
+  },
   "contact": {
     "eyebrow": "Contact",
     "title": "Parlons de votre projet",
