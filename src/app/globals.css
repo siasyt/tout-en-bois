@@ -1,26 +1,48 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* 品牌配色：现代工业 + 木材暖色 */
+@theme {
+  /* 背景 */
+  --color-paper: #faf8f4;
+  /* 主背景：暖白 */
+  --color-sand: #f0eae0;
+  /* 次背景：浅沙色，用于区块交替 */
+
+  /* 文字 */
+  --color-ink: #1e1c19;
+  /* 正文、标题 */
+  --color-muted: #6e6a63;
+  /* 次要文字 */
+  --color-line: #e2dbd0;
+  /* 分隔线、边框 */
+
+  /* 深色区块 */
+  --color-charcoal: #161513;
+  /* 深色区块、页脚背景 */
+
+  /* 强调色：橡木 */
+  --color-wood: #a86b3c;
+  --color-wood-dark: #8a5430;
+  /* 悬停状态 */
+  --color-wood-light: #d9b48f;
+  /* 深色背景上的强调 */
+
+  /* 辅色：深绿 */
+  --color-forest: #2f4232;
 }
 
+/* 字体：拉丁字母优先使用 Inter / Archivo，中文字符自动使用思源黑体 */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-inter), var(--font-noto-sc), system-ui, sans-serif;
+  --font-display: var(--font-archivo), var(--font-noto-sc), system-ui, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
 }

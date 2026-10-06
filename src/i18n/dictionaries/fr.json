@@ -1,0 +1,86 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "services": "Services",
+    "materials": "Matériaux",
+    "about": "À propos",
+    "contact": "Contact",
+    "quote": "Nous contacter"
+  },
+  "hero": {
+    "eyebrow": "Centre de fourniture et d'usinage de panneaux",
+    "title": "Choisissez vos matériaux, envoyez vos plans, nous nous occupons du reste.",
+    "subtitle": "Tout en Bois est le partenaire de production des professionnels de l'aménagement en Île-de-France : fourniture de panneaux, usinage standardisé et agencement sur mesure.",
+    "ctaPrimary": "Nous contacter",
+    "ctaSecondary": "Découvrir nos services"
+  },
+  "values": {
+    "items": [
+      { "title": "Matériaux de qualité", "text": "Une sélection de panneaux et de revêtements fiables." },
+      { "title": "Usinage de précision", "text": "Des process standardisés réalisés en atelier." },
+      { "title": "Livraison fiable", "text": "Des délais tenus, en retrait ou en livraison." },
+      { "title": "Valeur partagée", "text": "Un partenariat durable avec nos clients." }
+    ]
+  },
+  "services": {
+    "eyebrow": "Nos services",
+    "title": "Nous ne faisons pas de pose. Nous travaillons chaque panneau en amont.",
+    "items": [
+      {
+        "number": "01",
+        "title": "Vente de panneaux et revêtements",
+        "text": "Stock permanent des panneaux courants, nouvelles finitions et coloris ajoutés régulièrement."
+      },
+      {
+        "number": "02",
+        "title": "Usinage standardisé",
+        "text": "Découpe, placage de chants, perçage, rainurage, usinage de formes, placage et thermoformage."
+      },
+      {
+        "number": "03",
+        "title": "Agencement sur mesure",
+        "text": "Caissons, bars, vitrines et mobilier commercial fabriqués selon vos besoins."
+      }
+    ],
+    "more": "En savoir plus"
+  },
+  "advantages": {
+    "eyebrow": "Nos atouts",
+    "title": "La complexité reste à l'atelier, l'efficacité revient au client.",
+    "items": [
+      "Chaîne d'approvisionnement chinoise × réactivité locale en France",
+      "Stock permanent des matériaux courants, réassort local en urgence",
+      "Standards unifiés, service transparent",
+      "Découpe et placage de chants rapides, certaines commandes le jour même",
+      "Retrait sur place ou livraison, en toute flexibilité"
+    ]
+  },
+  "clients": {
+    "eyebrow": "Nos clients",
+    "items": [
+      "Entreprises de rénovation",
+      "Architectes et designers",
+      "Agences d'événementiel et d'exposition",
+      "Prestataires d'implantation de marques",
+      "Négociants et confrères"
+    ],
+    "note": "Pas de pose : uniquement un support de production qui simplifie votre travail."
+  },
+  "cta": {
+    "title": "Un projet, une question ?",
+    "text": "Devis, conseils ou simple renseignement : contactez-nous, nous revenons vers vous rapidement.",
+    "button": "Nous contacter"
+  },
+  "footer": {
+    "tagline": "Des matériaux aux éléments semi-finis, toute la complexité est gérée en atelier.",
+    "navTitle": "Navigation",
+    "contactTitle": "Contact",
+    "address": "67 Rue des Frères Lumière, 93330 Neuilly-sur-Marne",
+    "phone": "+33 0 00 00 00 00 [à confirmer]",
+    "email": "contact@atelier-toutenbois.fr [à confirmer]",
+    "hours": "Lun – Ven : 8h – 18h [à confirmer]",
+    "legal": "Mentions légales",
+    "privacy": "Politique de confidentialité",
+    "rights": "Tous droits réservés."
+  }
+}
