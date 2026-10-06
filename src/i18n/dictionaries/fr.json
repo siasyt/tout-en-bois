@@ -285,6 +285,124 @@
       "text": "C'est la valeur de Tout en Bois, et tout son potentiel."
     }
   },
+  "legalPage": {
+    "eyebrow": "Informations légales",
+    "title": "Mentions légales",
+    "updated": "Dernière mise à jour : octobre 2026",
+    "notice": "",
+    "sections": [
+      {
+        "title": "Éditeur du site",
+        "paragraphs": [
+          "Le présent site est édité par la société TOUT EN BOIS, société à responsabilité limitée (SARL) au capital de 8 000 euros.",
+          "Siège social : 67 Rue des Frères Lumière, 93330 Neuilly-sur-Marne, France.",
+          "Immatriculée au Registre du Commerce et des Sociétés de Bobigny sous le numéro 533 629 390.",
+          "Numéro de TVA intracommunautaire : [à compléter].",
+          "Téléphone : +33 7 70 03 97 65 — E-mail : contact@toutenbois.fr"
+        ]
+      },
+      {
+        "title": "Directeur de la publication",
+        "paragraphs": [
+          "Le directeur de la publication est Monsieur NI Gebin, en sa qualité de gérant de la société TOUT EN BOIS."
+        ]
+      },
+      {
+        "title": "Conception et réalisation",
+        "paragraphs": [
+          "Site conçu et réalisé par Centraline — E-mail : centraline93@gmail.com"
+        ]
+      },
+      {
+        "title": "Hébergement",
+        "paragraphs": [
+          "Le site est hébergé par : [nom de l'hébergeur, adresse et numéro de téléphone — à compléter]."
+        ]
+      },
+      {
+        "title": "Propriété intellectuelle",
+        "paragraphs": [
+          "L'ensemble des éléments présents sur ce site (textes, logos, graphismes, structure) est la propriété de TOUT EN BOIS ou de ses partenaires et est protégé par le droit de la propriété intellectuelle.",
+          "Toute reproduction, représentation ou adaptation, totale ou partielle, sans autorisation écrite préalable est interdite."
+        ]
+      },
+      {
+        "title": "Responsabilité",
+        "paragraphs": [
+          "TOUT EN BOIS s'efforce de fournir des informations aussi précises que possible. Les caractéristiques, dimensions et disponibilités des produits présentés sont données à titre indicatif et peuvent évoluer sans préavis.",
+          "TOUT EN BOIS ne saurait être tenue responsable des erreurs ou omissions, ni d'une indisponibilité temporaire du site."
+        ]
+      },
+      {
+        "title": "Données personnelles",
+        "paragraphs": [
+          "Les modalités de collecte et de traitement de vos données personnelles sont décrites dans notre politique de confidentialité."
+        ]
+      },
+      {
+        "title": "Droit applicable",
+        "paragraphs": [
+          "Les présentes mentions légales sont régies par le droit français. En cas de litige, et à défaut de résolution amiable, les tribunaux français seront seuls compétents."
+        ]
+      }
+    ]
+  },
+  "privacyPage": {
+    "eyebrow": "Informations légales",
+    "title": "Politique de confidentialité",
+    "updated": "Dernière mise à jour : octobre 2026",
+    "notice": "",
+    "sections": [
+      {
+        "title": "Responsable du traitement",
+        "paragraphs": [
+          "Le responsable du traitement des données collectées sur ce site est la société TOUT EN BOIS, SARL immatriculée au RCS de Bobigny sous le numéro 533 629 390, dont le siège est situé 67 Rue des Frères Lumière, 93330 Neuilly-sur-Marne.",
+          "Pour toute question relative à vos données : contact@toutenbois.fr"
+        ]
+      },
+      {
+        "title": "Données collectées",
+        "paragraphs": [
+          "Via le formulaire de contact, nous collectons uniquement les informations que vous nous transmettez : nom, société (facultatif), adresse e-mail ou numéro de téléphone, et le contenu de votre demande.",
+          "Aucune donnée n'est collectée à votre insu."
+        ]
+      },
+      {
+        "title": "Finalités et base légale",
+        "paragraphs": [
+          "Ces données sont utilisées exclusivement pour répondre à votre demande (devis, renseignement, prise de contact commerciale).",
+          "Le traitement repose sur votre consentement, exprimé en cochant la case prévue à cet effet, ainsi que sur l'exécution de mesures précontractuelles prises à votre demande."
+        ]
+      },
+      {
+        "title": "Destinataires",
+        "paragraphs": [
+          "Vos données sont destinées uniquement aux personnes habilitées de TOUT EN BOIS. Elles ne sont ni vendues, ni louées, ni cédées à des tiers.",
+          "L'envoi du formulaire est assuré par un prestataire technique de transmission d'e-mails, qui agit uniquement pour notre compte."
+        ]
+      },
+      {
+        "title": "Durée de conservation",
+        "paragraphs": [
+          "Vos données sont conservées pendant une durée maximale de trois ans à compter de notre dernier échange, sauf obligation légale de conservation plus longue."
+        ]
+      },
+      {
+        "title": "Vos droits",
+        "paragraphs": [
+          "Conformément au Règlement général sur la protection des données (RGPD) et à la loi Informatique et Libertés, vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation, d'opposition et de portabilité de vos données, ainsi que du droit de retirer votre consentement à tout moment.",
+          "Pour exercer ces droits, écrivez-nous à contact@toutenbois.fr. Vous pouvez également introduire une réclamation auprès de la CNIL (www.cnil.fr)."
+        ]
+      },
+      {
+        "title": "Cookies et services tiers",
+        "paragraphs": [
+          "Ce site n'utilise pas de cookies publicitaires ni de mesure d'audience.",
+          "La page Contact intègre une carte Google Maps. Lors de son affichage, Google peut déposer des cookies et collecter certaines données selon sa propre politique de confidentialité."
+        ]
+      }
+    ]
+  },
   "contact": {
     "eyebrow": "Contact",
     "title": "Parlons de votre projet",
