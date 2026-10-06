@@ -83,6 +83,74 @@
     "text": "Devis, conseils ou simple renseignement : contactez-nous, nous revenons vers vous rapidement.",
     "button": "Nous contacter"
   },
+  "servicesPage": {
+    "eyebrow": "Services",
+    "title": "De la plaque brute à l'élément prêt à assembler",
+    "intro": "Fourniture, usinage et agencement : nous prenons en charge toute la partie atelier pour que vous puissiez vous concentrer sur vos chantiers.",
+    "items": [
+      {
+        "number": "01",
+        "title": "Vente de panneaux et revêtements",
+        "text": "Un stock permanent des panneaux les plus utilisés en agencement, disponible en retrait ou en livraison. Nouvelles finitions et coloris ajoutés régulièrement.",
+        "details": [
+          "Panneaux de particules",
+          "MDF standard et hydrofuge",
+          "Contreplaqué",
+          "OSB",
+          "Panneaux mélaminés",
+          "Chants assortis"
+        ]
+      },
+      {
+        "number": "02",
+        "title": "Usinage standardisé",
+        "text": "Envoyez-nous vos plans, nous livrons des pièces découpées, chantées et percées, prêtes à être assemblées sur site.",
+        "details": [
+          "Découpe sur mesure",
+          "Placage de chants",
+          "Perçage et rainurage",
+          "Usinage de formes",
+          "Placage",
+          "Thermoformage"
+        ]
+      },
+      {
+        "number": "03",
+        "title": "Agencement sur mesure",
+        "text": "Pour les projets commerciaux, nous fabriquons des éléments complets, prêts à installer, selon vos plans et vos délais.",
+        "details": [
+          "Caissons et meubles",
+          "Bars et comptoirs",
+          "Vitrines",
+          "Mobilier commercial",
+          "Présentoirs et PLV",
+          "Éléments de stand"
+        ]
+      }
+    ],
+    "process": {
+      "eyebrow": "Comment ça marche",
+      "title": "Un processus simple, en quatre étapes",
+      "steps": [
+        {
+          "title": "Envoyez votre demande",
+          "text": "Plans, listes de débit ou simple description de votre besoin."
+        },
+        {
+          "title": "Devis et validation",
+          "text": "Nous étudions votre demande et vous envoyons un devis détaillé."
+        },
+        {
+          "title": "Fabrication en atelier",
+          "text": "Découpe, usinage et assemblage selon des standards unifiés."
+        },
+        {
+          "title": "Retrait ou livraison",
+          "text": "Récupérez votre commande à l'atelier ou faites-vous livrer."
+        }
+      ]
+    }
+  },
   "contact": {
     "eyebrow": "Contact",
     "title": "Parlons de votre projet",
