@@ -230,6 +230,61 @@
     ],
     "note": "Dimensions et épaisseurs indicatives, sous réserve de disponibilité. D'autres références peuvent être commandées sur demande."
   },
+  "aboutPage": {
+    "eyebrow": "À propos",
+    "title": "Se placer en amont, pour mieux servir ceux qui construisent",
+    "intro": "Tout en Bois est né d'une conviction : les professionnels de l'aménagement ont besoin d'un fournisseur fiable, pas d'un concurrent de plus.",
+    "story": {
+      "eyebrow": "Notre histoire",
+      "title": "Née sur les chantiers parisiens",
+      "paragraphs": [
+        "Le fondateur du projet a longtemps travaillé sur les chantiers d'agencement commercial à Paris. Il y a vu un marché en pleine mutation.",
+        "De plus en plus de marques françaises et internationales s'installent à Paris. Les exigences de design augmentent, les matériaux doivent être irréprochables et les délais se raccourcissent.",
+        "Pourtant, l'approvisionnement reste dispersé, peu efficace et coûteux. Forte d'une solide expérience du bois et des panneaux, Tout en Bois a choisi de se concentrer sur ce maillon essentiel de la chaîne."
+      ]
+    },
+    "quote": "Notre ambition n'est pas de concurrencer les entreprises d'agencement, mais de devenir le fournisseur dont elles ont toutes besoin.",
+    "problems": {
+      "eyebrow": "Ce que nous résolvons",
+      "title": "Au-delà de la fourniture de panneaux",
+      "items": [
+        {
+          "title": "Efficacité",
+          "text": "Les travaux de découpe et d'usinage sont réalisés en atelier, pour des chantiers plus rapides et plus propres."
+        },
+        {
+          "title": "Délais",
+          "text": "Un stock permanent et une production locale pour tenir les délais, même en cas d'urgence."
+        },
+        {
+          "title": "Standardisation",
+          "text": "Des process et des standards unifiés pour une qualité constante, commande après commande."
+        }
+      ]
+    },
+    "direction": {
+      "eyebrow": "Notre direction",
+      "title": "Une feuille de route claire",
+      "steps": [
+        {
+          "title": "Le fournisseur de référence",
+          "text": "Devenir le fournisseur commun des entreprises d'agencement."
+        },
+        {
+          "title": "Un centre d'usinage stable",
+          "text": "S'imposer comme un centre de transformation de panneaux fiable à Paris."
+        },
+        {
+          "title": "Un système reproductible",
+          "text": "Construire un modèle amont standardisé et reproductible."
+        }
+      ]
+    },
+    "closing": {
+      "title": "Quand le marché se tend, ce qui manque n'est pas la menuiserie, mais un système amont stable, transparent et fiable.",
+      "text": "C'est la valeur de Tout en Bois, et tout son potentiel."
+    }
+  },
   "contact": {
     "eyebrow": "Contact",
     "title": "Parlons de votre projet",
