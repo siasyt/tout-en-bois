@@ -16,10 +16,22 @@
   },
   "values": {
     "items": [
-      { "title": "优质材料", "text": "精选可靠的板材与饰面材料。" },
-      { "title": "精工制造", "text": "标准化工艺，在工厂内完成。" },
-      { "title": "稳定交付", "text": "交期可控，自提与配送并行。" },
-      { "title": "共创价值", "text": "与客户建立长期合作关系。" }
+      {
+        "title": "优质材料",
+        "text": "精选可靠的板材与饰面材料。"
+      },
+      {
+        "title": "精工制造",
+        "text": "标准化工艺，在工厂内完成。"
+      },
+      {
+        "title": "稳定交付",
+        "text": "交期可控，自提与配送并行。"
+      },
+      {
+        "title": "共创价值",
+        "text": "与客户建立长期合作关系。"
+      }
     ]
   },
   "services": {
@@ -71,14 +83,37 @@
     "text": "无论是报价、咨询还是其他需求，欢迎随时联系我们。",
     "button": "联系我们"
   },
+  "contact": {
+    "eyebrow": "联系我们",
+    "title": "聊聊您的项目",
+    "intro": "无论是报价、技术咨询还是其他问题，欢迎留言，或直接来工厂找我们。",
+    "infoTitle": "联系方式",
+    "form": {
+      "title": "给我们留言",
+      "name": "姓名",
+      "namePlaceholder": "您的姓名",
+      "company": "公司（选填）",
+      "companyPlaceholder": "公司名称",
+      "contact": "邮箱或电话",
+      "contactPlaceholder": "方便我们回复您的方式",
+      "message": "需求描述",
+      "messagePlaceholder": "请描述您的需求：板材类型、数量、加工要求、交期等",
+      "consent": "我同意 Tout en Bois 使用我的信息处理本次咨询，详见隐私政策。",
+      "submit": "发送",
+      "sending": "发送中...",
+      "success": "感谢留言，我们已收到您的信息，会尽快与您联系。",
+      "error": "发送失败，请重试或直接电话联系我们。"
+    },
+    "mapTitle": "工厂位置"
+  },
   "footer": {
     "tagline": "从材料到半成品板件，让复杂流程在工厂内完成。",
     "navTitle": "导航",
     "contactTitle": "联系方式",
     "address": "67 Rue des Frères Lumière, 93330 Neuilly-sur-Marne",
-    "phone": "+33 0 00 00 00 00 [待确认]",
-    "email": "contact@atelier-toutenbois.fr [待确认]",
-    "hours": "周一至周五 8:00 – 18:00 [待确认]",
+    "phone": "+33 7 70 03 97 65",
+    "email": "contact@toutenbois.fr",
+    "hours": "周一至周五 8:00 – 18:00",
     "legal": "法律声明",
     "privacy": "隐私政策",
     "rights": "版权所有。"

@@ -16,10 +16,22 @@
   },
   "values": {
     "items": [
-      { "title": "Matériaux de qualité", "text": "Une sélection de panneaux et de revêtements fiables." },
-      { "title": "Usinage de précision", "text": "Des process standardisés réalisés en atelier." },
-      { "title": "Livraison fiable", "text": "Des délais tenus, en retrait ou en livraison." },
-      { "title": "Valeur partagée", "text": "Un partenariat durable avec nos clients." }
+      {
+        "title": "Matériaux de qualité",
+        "text": "Une sélection de panneaux et de revêtements fiables."
+      },
+      {
+        "title": "Usinage de précision",
+        "text": "Des process standardisés réalisés en atelier."
+      },
+      {
+        "title": "Livraison fiable",
+        "text": "Des délais tenus, en retrait ou en livraison."
+      },
+      {
+        "title": "Valeur partagée",
+        "text": "Un partenariat durable avec nos clients."
+      }
     ]
   },
   "services": {
@@ -71,14 +83,37 @@
     "text": "Devis, conseils ou simple renseignement : contactez-nous, nous revenons vers vous rapidement.",
     "button": "Nous contacter"
   },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Parlons de votre projet",
+    "intro": "Devis, conseils techniques ou simple renseignement : laissez-nous un message ou passez nous voir à l'atelier.",
+    "infoTitle": "Nos coordonnées",
+    "form": {
+      "title": "Envoyez-nous un message",
+      "name": "Nom",
+      "namePlaceholder": "Votre nom",
+      "company": "Société (facultatif)",
+      "companyPlaceholder": "Nom de la société",
+      "contact": "E-mail ou téléphone",
+      "contactPlaceholder": "Comment vous recontacter",
+      "message": "Votre demande",
+      "messagePlaceholder": "Décrivez votre besoin : type de panneaux, quantités, usinage, délais...",
+      "consent": "J'accepte que mes données soient utilisées pour traiter ma demande, conformément à la politique de confidentialité.",
+      "submit": "Envoyer",
+      "sending": "Envoi en cours...",
+      "success": "Merci, votre message a bien été envoyé. Nous revenons vers vous rapidement.",
+      "error": "L'envoi a échoué. Veuillez réessayer ou nous contacter par téléphone."
+    },
+    "mapTitle": "Nous trouver"
+  },
   "footer": {
     "tagline": "Des matériaux aux éléments semi-finis, toute la complexité est gérée en atelier.",
     "navTitle": "Navigation",
     "contactTitle": "Contact",
     "address": "67 Rue des Frères Lumière, 93330 Neuilly-sur-Marne",
-    "phone": "+33 0 00 00 00 00 [à confirmer]",
-    "email": "contact@atelier-toutenbois.fr [à confirmer]",
-    "hours": "Lun – Ven : 8h – 18h [à confirmer]",
+    "phone": "+33 7 70 03 97 65",
+    "email": "contact@toutenbois.fr",
+    "hours": "Lun – Ven : 8h – 18h",
     "legal": "Mentions légales",
     "privacy": "Politique de confidentialité",
     "rights": "Tous droits réservés."
