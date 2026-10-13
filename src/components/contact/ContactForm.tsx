@@ -14,6 +14,9 @@ type ContactFormProps = {
 
 type Status = "idle" | "sending" | "success" | "error";
 
+// Web3Forms 密钥（本地读取 .env.local，线上读取 Netlify 环境变量）
+const ACCESS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_KEY;
+
 // 输入框通用样式
 const inputClass =
     "w-full border border-line bg-paper px-4 py-3 text-base text-ink placeholder:text-muted/60 transition-colors focus:border-wood focus:outline-none";
@@ -23,11 +26,60 @@ export default function ContactForm({ locale, form, privacyLabel }: ContactFormP
 
     async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
         event.preventDefault();
+
+        if (!ACCESS_KEY) {
+            console.error("缺少 NEXT_PUBLIC_WEB3FORMS_KEY 环境变量");
+            setStatus("error");
+            return;
+        }
+
         setStatus("sending");
 
-        // 临时模拟发送：下一步替换为真实的表单发送服务
-        await new Promise((resolve) => setTimeout(resolve, 1000));
-        setStatus("success");
+        const formElement = event.currentTarget;
+        const data = new FormData(formElement);
+        const name = String(data.get("name") ?? "");
+        const company = String(data.get("company") ?? "");
+        const contact = String(data.get("contact") ?? "");
+        const message = String(data.get("message") ?? "");
+
+        // 如果填写的联系方式是邮箱，收到邮件后可以直接点"回复"
+        const replyEmail = contact.includes("@") ? contact : undefined;
+
+        try {
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json",
+                },
+                body: JSON.stringify({
+                    access_key: ACCESS_KEY,
+                    subject: `Nouvelle demande via le site — ${name}`,
+                    from_name: "Site Tout en Bois",
+                    botcheck: data.get("botcheck") ? true : false,
+                    ...(replyEmail && { email: replyEmail }),
+                    // 以下字段会显示在收到的邮件里
+                    Nom: name,
+                    Société: company || "—",
+                    Contact: contact,
+                    Langue: locale === "zh" ? "Chinois" : "Français",
+                    Message: message,
+                }),
+            });
+
+            const result = await response.json();
+
+            if (result.success) {
+                formElement.reset();
+                setStatus("success");
+            } else {
+                console.error("Web3Forms 返回错误：", result);
+                setStatus("error");
+            }
+        } catch (error) {
+            console.error("表单发送失败：", error);
+            setStatus("error");
+        }
     }
 
     // 发送成功后显示的提示
@@ -45,6 +97,16 @@ export default function ContactForm({ locale, form, privacyLabel }: ContactFormP
             <h2 className="font-display text-2xl font-bold text-ink">{form.title}</h2>
 
             <form onSubmit={handleSubmit} className="mt-8 space-y-6">
+                {/* 防垃圾字段：对访客隐藏，机器人自动填写会被拦截 */}
+                <input
+                    type="checkbox"
+                    name="botcheck"
+                    className="hidden"
+                    style={{ display: "none" }}
+                    tabIndex={-1}
+                    autoComplete="off"
+                />
+
                 {/* 姓名 + 公司 */}
                 <div className="grid gap-6 sm:grid-cols-2">
                     <div>

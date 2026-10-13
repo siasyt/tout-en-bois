@@ -2,8 +2,10 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import { motion } from "motion/react";
 import { ArrowRight } from "lucide-react";
+import { consumeShouldAnimate } from "@/lib/animation";
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/get-dictionary";
 
@@ -13,6 +15,9 @@ type HeroProps = {
 };
 
 export default function Hero({ locale, hero }: HeroProps) {
+  // 切换语言时跳过入场动画，直接显示内容
+  const [shouldAnimate] = useState(consumeShouldAnimate);
+
   return (
     <section className="relative flex min-h-[calc(100svh-5rem)] items-center overflow-hidden bg-charcoal">
       {/* 背景图 */}
@@ -31,7 +36,7 @@ export default function Hero({ locale, hero }: HeroProps) {
       {/* 文字内容 */}
       <div className="relative mx-auto w-full max-w-7xl px-6 py-24">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={shouldAnimate ? { opacity: 0, y: 30 } : false}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="max-w-3xl"

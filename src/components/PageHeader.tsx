@@ -1,7 +1,9 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "motion/react";
 import { LogoMark } from "./Logo";
+import { consumeShouldAnimate } from "@/lib/animation";
 
 type PageHeaderProps = {
     eyebrow: string;
@@ -11,13 +13,16 @@ type PageHeaderProps = {
 
 // 内页顶部横幅：服务、板材、关于我们、联系等页面通用
 export default function PageHeader({ eyebrow, title, intro }: PageHeaderProps) {
+    // 切换语言时跳过入场动画，直接显示内容
+    const [shouldAnimate] = useState(consumeShouldAnimate);
+
     return (
         <section className="relative overflow-hidden bg-charcoal text-paper">
             {/* 右侧淡化的 Logo 图形作为装饰 */}
             <LogoMark className="pointer-events-none absolute -right-20 top-1/2 h-96 w-96 -translate-y-1/2 text-white/5" />
 
             <motion.div
-                initial={{ opacity: 0, y: 20 }}
+                initial={shouldAnimate ? { opacity: 0, y: 20 } : false}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, ease: "easeOut" }}
                 className="relative mx-auto max-w-7xl px-6 py-20 md:py-28"

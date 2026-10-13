@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { locales, type Locale } from "@/i18n/config";
+import { markLanguageSwitch } from "@/lib/animation";
 
 // 按钮上显示的简短名称
 const labels: Record<Locale, string> = {
@@ -30,6 +31,8 @@ export default function LanguageSwitcher({ current }: { current: Locale }) {
                     ) : (
                         <Link
                             href={pathFor(locale)}
+                            prefetch={true}
+                            onClick={markLanguageSwitch}
                             className="text-muted hover:text-wood transition-colors"
                         >
                             {labels[locale]}
