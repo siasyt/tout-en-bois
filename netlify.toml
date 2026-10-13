@@ -1,0 +1,10 @@
+# Netlify 构建配置
+[build]
+  # 构建命令
+  command = "npm run build"
+  # 构建后的静态文件夹（Next.js 静态导出的输出目录）
+  publish = "out"
+
+[build.environment]
+  # 指定 Node 版本，与本地开发环境保持一致
+  NODE_VERSION = "22"
