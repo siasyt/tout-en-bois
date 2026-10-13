@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { locales, type Locale } from "@/i18n/config";
 import { markLanguageSwitch } from "@/lib/animation";
@@ -14,11 +13,12 @@ const labels: Record<Locale, string> = {
 export default function LanguageSwitcher({ current }: { current: Locale }) {
     const pathname = usePathname();
 
-    // 把当前路径里的语言部分替换成目标语言，页面保持不变
+    // 把当前路径里的语言部分替换成目标语言，页面保持不变，并确保以斜杠结尾
     function pathFor(target: Locale) {
         const segments = pathname.split("/");
         segments[1] = target;
-        return segments.join("/");
+        const path = segments.join("/");
+        return path.endsWith("/") ? path : `${path}/`;
     }
 
     return (
@@ -29,14 +29,15 @@ export default function LanguageSwitcher({ current }: { current: Locale }) {
                     {locale === current ? (
                         <span className="font-semibold text-ink">{labels[locale]}</span>
                     ) : (
-                        <Link
+                        // 使用普通链接整页跳转，不依赖 Next.js 的预加载机制，静态托管上最稳定
+                        <a
                             href={pathFor(locale)}
-                            prefetch={true}
+                            hrefLang={locale}
                             onClick={markLanguageSwitch}
                             className="text-muted hover:text-wood transition-colors"
                         >
                             {labels[locale]}
-                        </Link>
+                        </a>
                     )}
                 </span>
             ))}
