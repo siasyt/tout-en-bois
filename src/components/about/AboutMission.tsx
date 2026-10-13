@@ -1,8 +1,9 @@
 "use client";
 
-import { motion } from "motion/react";
+import { motion, MotionConfig } from "motion/react";
 import { Gauge, Timer, Ruler, ArrowRight } from "lucide-react";
 import { LogoMark } from "@/components/Logo";
+import DirectionIllustration from "./DirectionIllustration";
 import type { Dictionary } from "@/i18n/get-dictionary";
 
 // 图标按顺序对应：效率、交付、标准化
@@ -16,7 +17,8 @@ type AboutMissionProps = {
 
 export default function AboutMission({ problems, direction, closing }: AboutMissionProps) {
     return (
-        <>
+        // reducedMotion="user"：访客系统开启"减少动态效果"时自动停止动画
+        <MotionConfig reducedMotion="user">
             {/* 我们解决的问题 */}
             <section className="bg-paper py-24">
                 <div className="mx-auto max-w-7xl px-6">
@@ -87,7 +89,13 @@ export default function AboutMission({ problems, direction, closing }: AboutMiss
 
                     <ol className="mt-14 grid gap-6 lg:grid-cols-[1fr_auto_1fr_auto_1fr] lg:items-stretch">
                         {direction.steps.map((step, index) => (
-                            <Step key={step.title} index={index} title={step.title} text={step.text} isLast={index === direction.steps.length - 1} />
+                            <Step
+                                key={step.title}
+                                index={index}
+                                title={step.title}
+                                text={step.text}
+                                isLast={index === direction.steps.length - 1}
+                            />
                         ))}
                     </ol>
                 </div>
@@ -111,11 +119,11 @@ export default function AboutMission({ problems, direction, closing }: AboutMiss
                     <p className="mt-8 text-lg text-wood-light">{closing.text}</p>
                 </motion.div>
             </section>
-        </>
+        </MotionConfig>
     );
 }
 
-// 发展方向的单个步骤（大屏幕时后面跟一个箭头）
+// 发展方向的单个步骤（大屏幕时后面跟一个律动的箭头）
 function Step({
     index,
     title,
@@ -136,6 +144,11 @@ function Step({
                 transition={{ duration: 0.5, delay: index * 0.2, ease: "easeOut" }}
                 className="bg-paper p-8"
             >
+                {/* 动态插画 */}
+                <div className="mb-6 flex h-28 items-center justify-center bg-sand/60">
+                    <DirectionIllustration index={index} />
+                </div>
+
                 <span className="font-display text-4xl font-bold text-wood/30">
                     {String(index + 1).padStart(2, "0")}
                 </span>
@@ -143,10 +156,15 @@ function Step({
                 <p className="mt-3 text-base leading-relaxed text-muted">{text}</p>
             </motion.li>
 
-            {/* 步骤之间的箭头：大屏幕横向，小屏幕隐藏 */}
+            {/* 步骤之间的箭头：大屏幕横向律动，小屏幕隐藏 */}
             {!isLast && (
                 <li aria-hidden="true" className="hidden items-center justify-center lg:flex">
-                    <ArrowRight size={28} strokeWidth={1.5} className="text-wood" />
+                    <motion.span
+                        animate={{ x: [0, 6, 0] }}
+                        transition={{ duration: 1.6, repeat: Infinity, ease: "easeInOut" }}
+                    >
+                        <ArrowRight size={28} strokeWidth={1.5} className="text-wood" />
+                    </motion.span>
                 </li>
             )}
         </>
