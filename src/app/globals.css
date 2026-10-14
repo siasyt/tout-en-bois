@@ -46,3 +46,36 @@ body {
   color: var(--color-ink);
   font-family: var(--font-sans);
 }
+
+/* 合作伙伴 Logo 墙：无限横向滚动 */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 45s linear infinite;
+}
+
+.marquee-reverse {
+  animation-direction: reverse;
+}
+
+/* 鼠标悬停时暂停 */
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+/* 访客开启"减少动态效果"时停止滚动 */
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+}

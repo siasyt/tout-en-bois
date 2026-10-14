@@ -3,6 +3,7 @@ import { getDictionary } from "@/i18n/get-dictionary";
 import type { Locale } from "@/i18n/config";
 import PageHeader from "@/components/PageHeader";
 import AboutStory from "@/components/about/AboutStory";
+import AboutPartners from "@/components/about/AboutPartners";
 import AboutMission from "@/components/about/AboutMission";
 import CallToAction from "@/components/home/CallToAction";
 
@@ -38,6 +39,9 @@ export default async function AboutPage({
             />
 
             <AboutStory story={dict.aboutPage.story} quote={dict.aboutPage.quote} />
+
+            {/* 合作品牌与项目 */}
+            <AboutPartners content={dict.aboutPage.partners} />
 
             <AboutMission
                 problems={dict.aboutPage.problems}
